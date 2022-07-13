@@ -24,9 +24,9 @@
                 <div class="container">
                     <div class="col-6 offset-3">
                         <ul class="list-group">
-                            <li v-for="task in tasks" :class="{'l-through' : task.done === true}"
+                            <li v-for="(task, i) in tasks" :class="{'l-through' : task.done === true}"
                                 class="list-group-item d-flex justify-content-between"><input type="checkbox">{{
-                                task.text }}<button type="button" class="btn-close"></button>
+                                task.text }}<button type="button" class="btn-close" @click="deleteTask(i)"></button>
                             </li>
                         </ul>
                     </div>

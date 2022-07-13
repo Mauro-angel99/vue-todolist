@@ -21,6 +21,8 @@ const root = new Vue({
         ]
     },
     methods: {
-
+        deleteTask(i) {
+            this.tasks.splice(i, 1)
+        }
     }
 })
