@@ -1,0 +1,12 @@
+header {
+    height: 120px;
+}
+
+h1 {
+    text-align: center;
+    line-height: 120px;
+}
+
+.l-through {
+    text-decoration: line-through;
+}
