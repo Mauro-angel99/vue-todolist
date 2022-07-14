@@ -23,6 +23,10 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="col-6 offset-3">
+                        <div class="input-group">
+                            <input v-model="newTask" type="text" class="form-control" placeholder="Aggiungi">
+                            <button type="button" class="btn btn-success" @click="addTask">Aggiungi</button>
+                        </div>
                         <ul class="list-group">
                             <li v-for="(task, i) in tasks" :class="{'l-through' : task.done === true}"
                                 class="list-group-item d-flex justify-content-between"><input type="checkbox">{{
